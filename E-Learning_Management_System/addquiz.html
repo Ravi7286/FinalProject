@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-sacle=1">
+    <title>Accusoft Admin</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="AddQuiz.css">
+    </head>
+    <body>
+        
+        <input type="checkbox" id="nav-toggle">
+        <div class="sidebar">
+         <div class="sidebar-brand">
+             <h2><span class="lab la-accusoft"></span> <span>AceOne</span></h2>
+         </div>
+          
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="dashboard_d.php"  class="active"><span class="las la-igloo"></span> <span >Dashboard</span></a>  
+                </li>
+                <li>
+                    <a href="Studentdetail1.php"><span class="las la-users"></span> <span >Student Details</span></a>  
+                </li>
+                <li>
+                    <a href="addcourse.php"><span class="las la-clipboard-list"></span>  <span >Add Course</span></a>  
+                </li>
+                <li>
+                    <a href="addquiz.html"><span class="las la-shopping-bag"></span> <span >Add Quiz</span></a>  
+                </li>
+                <li>
+                    <a href="coursenote.html"><span class="las la-receipt"></span> <span >Add course notes</span></a>  
+                </li>
+                <li>
+                    <a href="contactus.php"><span class="las la-user-circle"></span> <span >View ContactUs</span></a>  
+                </li>
+                <li>
+                    <a href=""><span class="las la-clipboard-list"></span> <span >View Result</span></a>  
+                </li> 
+                <li>
+                    <a href="logout.php"><span class="las la-clipboard-list"></span> <span >Logout</span></a>  
+                </li>        
+            </ul>
+            </div>
+        </div>
+        
+		
+		<div class="main-content">
+            <header>
+               <h2>
+                    <label for="nav-toggle">
+                       <span class="las la-bars"></span>
+                   </label> 
+                   
+                   Dashboard
+               </h2>
+               
+               <div class="search-wrapper">
+                   <span class="las la-search"></span>
+                   <input type="search" placeholder="Search Here" />
+               </div>
+               
+               <div class="user-wrapper">
+                   <img src="C:\Users\Vikas Jaiswal\OneDrive\Desktop\Final Project\img1.jpg" width="40px" height="40px" alt="">
+                   <div>
+                       <h4>Vikas Jaiswal</h4>
+                       <small>Super Admin</small>
+                   </div>
+               </div>
+             </header>
+             
+             <main>
+            <div class="container">
+                <h2>Add A Question</h2>
+               
+                    <form method="POST" action="add.php">
+                        <p>
+                            <label class="p">Question Number:</label>
+                            <input type="number" name="question_number" value="<?php echo $next;  ?>">
+                        </p>
+                        <p>
+                            <label class="p">Question Text:</label>
+                            <input type="text" name="question_text">
+                        </p>
+                        <p>
+                            <label class="p">Choice 1:</label>
+                            <input type="text" name="choice1">
+                        </p>
+                        <p>
+                            <label class="p">Choice 2:</label>
+                            <input type="text" name="choice2">
+                        </p>
+                        <p>
+                            <label class="p">Choice 3:</label>
+                            <input type="text" name="choice3">
+                        </p>
+                        <p>
+                            <label class="p">Choice 4:</label>
+                            <input type="text" name="choice4">
+                        </p>
+                        <p>
+                            <label class="p">Choice 5:</label>
+                            <input type="text" name="choice5">
+                        </p>
+                        <p>
+                            <label class="p">Correct Option Number</label>
+                            <input type="number" name="correct_choice">
+                        </p>
+                        <input type="submit" name="submit" value ="submit">
+                            
+                        
+    
+    
+                </form>
+            </div>
+    
+    </main>
+         
+		</div>
+		</body>
+		</html>
+		
+        
